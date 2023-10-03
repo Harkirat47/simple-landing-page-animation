@@ -12,18 +12,24 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-attachment: fixed;
 }
 
 h1 {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
 	font-size: 2rem;
 	display: inline-block;
 	padding: 1rem;
-	font-weight: 400;
 	position: relative;
 	opacity: 1;
 	transform: scale(1);
 	transition: transform 0.5s ease, opacity 1s ease;
+	font-size: 96px;
+	background: -webkit-linear-gradient(45deg, rgb(218, 94, 94), rgb(75, 75, 255));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-weight: 1600;
 }
 
 .is-loading h1 {
